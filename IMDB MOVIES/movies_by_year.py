@@ -34,5 +34,6 @@ plt.xlabel('Year')
 plt.ylabel('Number of Movies Released')
 plt.title('Number of Movies Released In 10 Highest Release Years')
 plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
-plt.show()
 plt.savefig("Plots/Movies_in_Highest_ReleaseYears.png")
+plt.show()
+
