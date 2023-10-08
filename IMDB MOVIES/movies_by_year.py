@@ -22,18 +22,21 @@ else :
 movie_counts_by_year = imdb_movies.groupby('Released_Year').size().reset_index(name='Movie_Count')
 sort_highest_count_years = movie_counts_by_year.sort_values(by="Movie_Count", ascending=False)
 filter_top10_years = sort_highest_count_years.head(10)
-filter_top10_years = filter_top10_years.sort_values(by="Released_Year", ascending=True)
+print("Movie Count by Year...\n\n")
 print(movie_counts_by_year)
-print(sort_highest_count_years)
+# print(sort_highest_count_years)
+print("Highest number of Movies Released in Years...\n\n")
 print(filter_top10_years)
 
+filter_top10_years = filter_top10_years.sort_values(by="Released_Year", ascending=True)
 # Show Statistics of top 10 years as a Plot
 plt.figure(figsize=(12, 8))  # Set the figure size
 plt.bar(filter_top10_years['Released_Year'], filter_top10_years['Movie_Count'])
 plt.xlabel('Year')
 plt.ylabel('Number of Movies Released')
 plt.title('Number of Movies Released In 10 Highest Release Years')
-plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
+plt.xticks(rotation=90)  # Rotate x-axis labels for better readability
+plt.tight_layout()
 plt.savefig("Plots/Movies_in_Highest_ReleaseYears.png")
 plt.show()
 
