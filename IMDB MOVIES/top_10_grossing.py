@@ -6,8 +6,8 @@ imdb_movies = pd.read_csv(r"imdb_top_1000.csv")
 print(imdb_movies)
 
 # Clean data to convert string type Gross column to float for analysis and remove any commas in between
-
 imdb_movies.Gross = imdb_movies.Gross.str.replace(',','').astype(float)
+
 # Find Top 10 Highest Grossing Films
 top10_highest_grossing = imdb_movies.sort_values(by="Gross", ascending=False).head(10)
 top10_highest_grossing = top10_highest_grossing[["Series_Title", "Released_Year", "Gross"]]
