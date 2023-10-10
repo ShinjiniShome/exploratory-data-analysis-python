@@ -11,8 +11,16 @@ This folder contains the PNG files of all visualizations created as a part of ED
 ## movies_by_year.py
 Finds the number of movies and their names in a given year.  
 Finds how many movies were released in each year and the top 10 years when highest number of movies were released.  
-Shows statistics of top 10 years as a Plot in file Movies_in_Highest_ReleaseYears.png under the /Plots folder.  
+Shows statistics of top 10 years as a Plot in file "Movies_in_Highest_ReleaseYears.png" under the /Plots folder.  
 
 ## top_10_grossing.py
 Cleans data to convert string type Gross column to float for analysis and remove any commas in between for analysis.  
-Finds top 10 highest grossing films and shows the statistics as a Plot in file Top10_Highest_Grossing_Movies.png under the /Plots folder.
+Finds top 10 highest grossing films and shows the statistics as a Plot in file "Top10_Highest_Grossing_Movies.png" under the /Plots folder.  
+
+## best10_directors_ratings_metascore.py
+Finds the top 10 directors based on IMDB ratings and also on the Meta Scores.  
+Shows the above comparison as two Subplots in file "Best10_Director _Rating_MetaScore.png" under the /Plots folder.  
+
+## top10_genres.py
+Finds the top 10 most popular genres amongs all the movies released and stores in a dictionary.  
+Also plots the above using seaborn library and in file "Top10_Genres.png" under the /Plots folder.
