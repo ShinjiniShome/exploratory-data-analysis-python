@@ -24,3 +24,7 @@ Shows the above comparison as two Subplots in file "Best10_Director _Rating_Meta
 ## top10_genres.py
 Finds the top 10 most popular genres amongs all the movies released and stores in a dictionary.  
 Also plots the above using seaborn library and in file "Top10_Genres.png" under the /Plots folder.
+
+## correlation_of_attributes.py
+Cleans data to convert string type Gross column to float for analysis and remove any commas in between, also extracts just the value from the Runtime column and discards the word min.  
+Uses functions to show different scatter plots using two attributes ato see if they are correlated or not. The scatter plots are added as the files "IMDB_Rating_vs_Gross.png" , "IMDB_Rating_vs_Runtime.png" , "Meta_Score_vs_Gross.png" , "Meta_Score_vs_Runtime.png" and "Runtime_vs_Gross.png" under the /Plots folder.
